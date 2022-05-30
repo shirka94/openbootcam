@@ -1,0 +1,37 @@
+
+
+
+class Main {                          //error de Java al poner public ( main is public)
+    public static void main(String[] args) throws Exception {
+        
+        int resultado;
+        resultado = suma(5, 12, 40); //Los : es una ayuda del intellij, no se ponen
+
+        System.out.println(resultado);
+
+        //  suma(5,12,40);
+        coche grande = new coche();
+        grande.anadirpuertas(2); // puertas que quieres añadir
+    }
+
+    public static int suma(int a, int b, int c) {
+        return a + b + c;
+    }
+
+
+    public static class coche {
+        int numerodepuertas = 3; // numero que tiene el por defecto
+
+        int anadirpuertas(int nuevaspuertas) {  
+
+            int nuevaspuertasfinal;
+            nuevaspuertasfinal = nuevaspuertas + numerodepuertas;
+
+
+            System.out.println(nuevaspuertasfinal);
+            return nuevaspuertas;
+        }
+    }
+
+
+}
